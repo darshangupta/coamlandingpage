@@ -3,7 +3,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, User } from "lucide-react";
+import { Mail, Phone, User, MapPin, BadgeCheck, Settings, DollarSign } from "lucide-react";
 import { useRef } from "react";
 
 export default function Home() {
@@ -39,40 +39,52 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-sm border-0">
-            <CardHeader>
+            <CardHeader className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-blue-600" />
+              </div>
               <CardTitle className="text-lg">Lease Secured</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="text-center">
               <p className="text-gray-700">
                 I sublease legal space at high-traffic locations — no landlord hassles for you.
               </p>
             </CardContent>
           </Card>
           <Card className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-sm border-0">
-            <CardHeader>
+            <CardHeader className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                <BadgeCheck className="w-6 h-6 text-green-600" />
+              </div>
               <CardTitle className="text-lg">License Ready</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="text-center">
               <p className="text-gray-700">
                 Each site has full permission to file the Location License with the Georgia Lottery.
               </p>
             </CardContent>
           </Card>
           <Card className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-sm border-0">
-            <CardHeader>
+            <CardHeader className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <Settings className="w-6 h-6 text-purple-600" />
+              </div>
               <CardTitle className="text-lg">You Operate, I Manage Site</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="text-center">
               <p className="text-gray-700">
                 You own and operate the machines. I handle the lease and location relationship.
               </p>
             </CardContent>
           </Card>
           <Card className="rounded-2xl shadow-lg bg-white/80 backdrop-blur-sm border-0">
-            <CardHeader>
+            <CardHeader className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <DollarSign className="w-6 h-6 text-orange-600" />
+              </div>
               <CardTitle className="text-lg">Fixed Rent, No Splits</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="text-center">
               <p className="text-gray-700">
                 Locations are paid a flat monthly rent — no cut-sharing or revenue headaches.
               </p>
